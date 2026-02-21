@@ -148,6 +148,7 @@ ul li a:hover {
   justify-content: center;
   padding: 24px 0;
   font-size: 24px;
+  animation: float 3s ease-in-out infinite;
 }
 
 #social-links a {
@@ -229,5 +230,15 @@ footer {
   }
   to {
     left: 0;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
